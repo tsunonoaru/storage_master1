@@ -3,6 +3,7 @@ from datacenter.models import Passcard, Visit
 from datacenter.visit_analysis import get_duration, is_visit_long, format_duration
 from django.utils import timezone
 
+
 def passcard_info_view(request, passcode):
     passcard = get_object_or_404(Passcard, passcode=passcode)
 
