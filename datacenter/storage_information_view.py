@@ -3,6 +3,7 @@ from datacenter.models import Visit
 from datacenter.visit_analysis import get_duration, format_duration
 from django.utils import timezone
 
+
 def storage_information_view(request):
     ongoing_visits = Visit.objects.filter(leaved_at__isnull=True)
 
