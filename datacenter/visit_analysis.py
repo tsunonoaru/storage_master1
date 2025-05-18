@@ -11,7 +11,7 @@ def get_duration(visit):
     if visit.leaved_at:
         return visit.leaved_at - visit.entered_at
     else:
-        current_time = timezone.localtime(timezone.now())
+        current_time = timezone.now()
         return current_time - visit.entered_at
 
 
